@@ -29,7 +29,7 @@ class UserInfo:QueryData{
     func Authenticate()->Bool{
         //invoke authenticate function to api
 //        var data=self.PostData(myURL: baseURL+"Login/Authenticate", paramData: "username="+self.Username+"&password="+password);
-        return self.Username == "ljbdelacruz" && self.Password=="soyamilk_05" ? true:false;
+        return self.Username == "ljbdelacruz" && self.Password=="soyamilk" ? true:false;
     }
     
     

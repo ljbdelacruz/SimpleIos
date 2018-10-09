@@ -13,8 +13,8 @@ class UserInfoList{
     var list=[UserInfo]();
     init(){}
     func GetListByFirstname(name:String){
-        list.append(UserInfo(id: "1ee", uname: "ljbdelacruz", pass: "soyamilk_95"));
-        list.append(UserInfo(id: "2ee", uname: "ljbdelacruz01", pass: "soyamilk_95"));
+        list.append(UserInfo(id: "1ee", uname: "ljbdelacruz", pass: "soyamilk"));
+        list.append(UserInfo(id: "2ee", uname: "ljbdelacruz01", pass: "soyamilk"));
     }
 }
 
