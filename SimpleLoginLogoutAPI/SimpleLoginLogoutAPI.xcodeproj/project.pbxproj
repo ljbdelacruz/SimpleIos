@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		562D7A95EEEDC32C4F13C1F5 /* Pods_SimpleLoginLogoutAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B9B04CA14B19977FC12373 /* Pods_SimpleLoginLogoutAPI.framework */; };
+		6F1CBD2521671B2F008E2FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD2421671B2F008E2FEC /* AppDelegate.swift */; };
+		6F1CBD2721671B2F008E2FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD2621671B2F008E2FEC /* ViewController.swift */; };
+		6F1CBD2A21671B2F008E2FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CBD2821671B2F008E2FEC /* Main.storyboard */; };
+		6F1CBD2C21671B2F008E2FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CBD2B21671B2F008E2FEC /* Assets.xcassets */; };
+		6F1CBD2F21671B2F008E2FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1CBD2D21671B2F008E2FEC /* LaunchScreen.storyboard */; };
+		6F1CBD38216B0F87008E2FEC /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD37216B0F87008E2FEC /* userInfo.swift */; };
+		6F1CBD3A216BBAA3008E2FEC /* UserInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD39216BBAA3008E2FEC /* UserInfoList.swift */; };
+		6F1CBD3D216BC1CA008E2FEC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD3C216BC1CA008E2FEC /* DashboardViewController.swift */; };
+		6F1CBD3F216C6456008E2FEC /* QueryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD3E216C6456008E2FEC /* QueryData.swift */; };
+		6F1CBD42216C65E5008E2FEC /* globalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD41216C65E5008E2FEC /* globalData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3226255BD8CAB6A737B86058 /* Pods-SimpleLoginLogoutAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginLogoutAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI.release.xcconfig"; sourceTree = "<group>"; };
+		44B9B04CA14B19977FC12373 /* Pods_SimpleLoginLogoutAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleLoginLogoutAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1CBD2121671B2F008E2FEC /* SimpleLoginLogoutAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLoginLogoutAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1CBD2421671B2F008E2FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F1CBD2621671B2F008E2FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F1CBD2921671B2F008E2FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F1CBD2B21671B2F008E2FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F1CBD2E21671B2F008E2FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F1CBD3021671B30008E2FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1CBD37216B0F87008E2FEC /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		6F1CBD39216BBAA3008E2FEC /* UserInfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoList.swift; sourceTree = "<group>"; };
+		6F1CBD3C216BC1CA008E2FEC /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		6F1CBD3E216C6456008E2FEC /* QueryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryData.swift; sourceTree = "<group>"; };
+		6F1CBD41216C65E5008E2FEC /* globalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalData.swift; sourceTree = "<group>"; };
+		B99A33BAB6C0239C595285DC /* Pods-SimpleLoginLogoutAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginLogoutAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F1CBD1E21671B2F008E2FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				562D7A95EEEDC32C4F13C1F5 /* Pods_SimpleLoginLogoutAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69BB578C5F833CDFA11CA3A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B9B04CA14B19977FC12373 /* Pods_SimpleLoginLogoutAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F1CBD1821671B2F008E2FEC = {
+			isa = PBXGroup;
+			children = (
+				6F1CBD2321671B2F008E2FEC /* SimpleLoginLogoutAPI */,
+				6F1CBD2221671B2F008E2FEC /* Products */,
+				E9848AAE4B50F22E7E1D620E /* Pods */,
+				69BB578C5F833CDFA11CA3A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6F1CBD2221671B2F008E2FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F1CBD2121671B2F008E2FEC /* SimpleLoginLogoutAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F1CBD2321671B2F008E2FEC /* SimpleLoginLogoutAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6F1CBD40216C65C8008E2FEC /* singleton */,
+				6F1CBD3B216BC1B4008E2FEC /* ViewControllers */,
+				6F1CBD36216B0F76008E2FEC /* models */,
+				6F1CBD2421671B2F008E2FEC /* AppDelegate.swift */,
+				6F1CBD2621671B2F008E2FEC /* ViewController.swift */,
+				6F1CBD2821671B2F008E2FEC /* Main.storyboard */,
+				6F1CBD2B21671B2F008E2FEC /* Assets.xcassets */,
+				6F1CBD2D21671B2F008E2FEC /* LaunchScreen.storyboard */,
+				6F1CBD3021671B30008E2FEC /* Info.plist */,
+			);
+			path = SimpleLoginLogoutAPI;
+			sourceTree = "<group>";
+		};
+		6F1CBD36216B0F76008E2FEC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6F1CBD37216B0F87008E2FEC /* userInfo.swift */,
+				6F1CBD39216BBAA3008E2FEC /* UserInfoList.swift */,
+				6F1CBD3E216C6456008E2FEC /* QueryData.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		6F1CBD3B216BC1B4008E2FEC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F1CBD3C216BC1CA008E2FEC /* DashboardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6F1CBD40216C65C8008E2FEC /* singleton */ = {
+			isa = PBXGroup;
+			children = (
+				6F1CBD41216C65E5008E2FEC /* globalData.swift */,
+			);
+			path = singleton;
+			sourceTree = "<group>";
+		};
+		E9848AAE4B50F22E7E1D620E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B99A33BAB6C0239C595285DC /* Pods-SimpleLoginLogoutAPI.debug.xcconfig */,
+				3226255BD8CAB6A737B86058 /* Pods-SimpleLoginLogoutAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F1CBD2021671B2F008E2FEC /* SimpleLoginLogoutAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1CBD3321671B30008E2FEC /* Build configuration list for PBXNativeTarget "SimpleLoginLogoutAPI" */;
+			buildPhases = (
+				23D8204D6B62BBABAE9B23AB /* [CP] Check Pods Manifest.lock */,
+				6F1CBD1D21671B2F008E2FEC /* Sources */,
+				6F1CBD1E21671B2F008E2FEC /* Frameworks */,
+				6F1CBD1F21671B2F008E2FEC /* Resources */,
+				837FD04E894AAFCDC9E3924F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleLoginLogoutAPI;
+			productName = SimpleLoginLogoutAPI;
+			productReference = 6F1CBD2121671B2F008E2FEC /* SimpleLoginLogoutAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F1CBD1921671B2F008E2FEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lainel John Dela Cruz";
+				TargetAttributes = {
+					6F1CBD2021671B2F008E2FEC = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6F1CBD1C21671B2F008E2FEC /* Build configuration list for PBXProject "SimpleLoginLogoutAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F1CBD1821671B2F008E2FEC;
+			productRefGroup = 6F1CBD2221671B2F008E2FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F1CBD2021671B2F008E2FEC /* SimpleLoginLogoutAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F1CBD1F21671B2F008E2FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1CBD2F21671B2F008E2FEC /* LaunchScreen.storyboard in Resources */,
+				6F1CBD2C21671B2F008E2FEC /* Assets.xcassets in Resources */,
+				6F1CBD2A21671B2F008E2FEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23D8204D6B62BBABAE9B23AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleLoginLogoutAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837FD04E894AAFCDC9E3924F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CircleProgressBar/CircleProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F1CBD1D21671B2F008E2FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1CBD3A216BBAA3008E2FEC /* UserInfoList.swift in Sources */,
+				6F1CBD42216C65E5008E2FEC /* globalData.swift in Sources */,
+				6F1CBD38216B0F87008E2FEC /* userInfo.swift in Sources */,
+				6F1CBD3F216C6456008E2FEC /* QueryData.swift in Sources */,
+				6F1CBD3D216BC1CA008E2FEC /* DashboardViewController.swift in Sources */,
+				6F1CBD2721671B2F008E2FEC /* ViewController.swift in Sources */,
+				6F1CBD2521671B2F008E2FEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6F1CBD2821671B2F008E2FEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1CBD2921671B2F008E2FEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F1CBD2D21671B2F008E2FEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1CBD2E21671B2F008E2FEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F1CBD3121671B30008E2FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F1CBD3221671B30008E2FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F1CBD3421671B30008E2FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99A33BAB6C0239C595285DC /* Pods-SimpleLoginLogoutAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				INFOPLIST_FILE = SimpleLoginLogoutAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laineljohn.SimpleLoginLogoutAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F1CBD3521671B30008E2FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3226255BD8CAB6A737B86058 /* Pods-SimpleLoginLogoutAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				INFOPLIST_FILE = SimpleLoginLogoutAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laineljohn.SimpleLoginLogoutAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F1CBD1C21671B2F008E2FEC /* Build configuration list for PBXProject "SimpleLoginLogoutAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1CBD3121671B30008E2FEC /* Debug */,
+				6F1CBD3221671B30008E2FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1CBD3321671B30008E2FEC /* Build configuration list for PBXNativeTarget "SimpleLoginLogoutAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1CBD3421671B30008E2FEC /* Debug */,
+				6F1CBD3521671B30008E2FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F1CBD1921671B2F008E2FEC /* Project object */;
+}

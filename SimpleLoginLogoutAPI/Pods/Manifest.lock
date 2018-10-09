@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.7.1)
+  - CircleProgressBar (0.32)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CircleProgressBar
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CircleProgressBar
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: d96f81a8580038e9f9e6eaf6d25fa573ca3c257a
+
+COCOAPODS: 1.5.0
