@@ -16,14 +16,14 @@ class QueryData{
     
     init(){
     }
-    func PostAlamo(url:String, param:[String:String], completionHandler: @escaping (Any?, Error?) -> ()){
+    func PostAlamo(url:String, param:[String:String], completionHandler: @escaping (Any?, Bool?, Error?) -> ()){
         Alamofire.request(baseURL+url, method:.post, parameters:param).responseJSON{response in
             if response.result.isSuccess{
                 let data:JSON=JSON(response.result.value!);
-                completionHandler(data as? JSON, nil)
+                completionHandler(data as? JSON, true, nil)
             }else{
                 self.devMessage="Error \(response.result.error!)";
-                completionHandler("Please make sure you have internet connection!" as? String, nil)
+                completionHandler("Not Connected to internet" as? String, false, nil)
             }
         };
     }

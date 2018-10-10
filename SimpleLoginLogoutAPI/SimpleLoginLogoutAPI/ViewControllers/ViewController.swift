@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var UIpassword: UITextField!
     @IBOutlet weak var UIusername: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var loadingNotif: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,18 +30,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func onLoginClick(_ sender: UIButton) {
+        self.loadingNotif.alpha=1;
         self.userInfo.Username=self.UIusername.text!;
         self.userInfo.Password=self.UIpassword.text!;
         self.userInfo.Authenticate(completionHandler: {
             (response, isSuccess,error) in
             if(isSuccess!==false){
-                print(response!);
                 let message=response! as! String
                 self.errorMessageLabel.text=message;
                 self.errorMessageLabel.alpha=1;
             }else{
                 self.performSegue(withIdentifier: "loginToDashboard", sender:sender);
             }
+            self.loadingNotif.alpha=0;
         })
     }
     func ToggleOptions(){

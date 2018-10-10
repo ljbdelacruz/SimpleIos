@@ -35,11 +35,15 @@ class UserInfo:QueryData{
     func Authenticate(completionHandler: @escaping (Any?, Bool?, Error?) -> ()){
 //        invoke authenticate function to api
         self.PostAlamo(url: "UserInformation/UTestAuth", param: ["email":self.Username, "pass":self.Password], completionHandler: {
-            (response, error)->() in
-            var jsonData=response! as! JSON;
-            var isSuccess=self.CheckJSONSuccess(json: jsonData);
-            var resp=self.FormatJSON(json: jsonData, isSuccess: isSuccess);
-            completionHandler(resp as? Any, isSuccess, nil)
+            (response, asuccess, error)->() in
+            if asuccess==true{
+                var jsonData=response! as! JSON;
+                var isSuccess=self.CheckJSONSuccess(json: jsonData);
+                var resp=self.FormatJSON(json: jsonData, isSuccess: isSuccess);
+                completionHandler(resp as? Any, isSuccess, nil)
+            }else{
+                completionHandler(response! as! String, false, nil);
+            }
         });
     }
     

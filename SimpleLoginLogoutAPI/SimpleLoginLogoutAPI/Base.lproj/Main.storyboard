@@ -50,6 +50,13 @@
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Processing please wait..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSo-7V-ejH">
+                                <rect key="frame" x="16" y="193" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,6 +65,7 @@
                         <outlet property="UIpassword" destination="5tO-Hr-2iC" id="lqh-ZN-UhE"/>
                         <outlet property="UIusername" destination="bn8-0O-43R" id="GAw-xT-J1K"/>
                         <outlet property="errorMessageLabel" destination="Ukz-sP-anh" id="Icw-Ag-gmy"/>
+                        <outlet property="loadingNotif" destination="WSo-7V-ejH" id="4d6-MK-rcx"/>
                         <outlet property="loginBtn" destination="PJ0-PS-2cI" id="kCP-LD-7Ft"/>
                         <segue destination="yde-kW-3Cs" kind="show" identifier="loginToDashboard" id="iSr-It-24d"/>
                     </connections>
