@@ -45,6 +45,8 @@ class UserInfo:QueryData{
                 completionHandler(response! as! String, false, nil);
             }
         });
+        
+//        return self.Username=="ljbdelacruz123@gmail.com"?true:false;
     }
     
     

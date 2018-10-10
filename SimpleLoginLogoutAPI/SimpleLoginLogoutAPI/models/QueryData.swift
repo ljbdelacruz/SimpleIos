@@ -12,7 +12,6 @@ import SwiftyJSON
 
 class QueryData{
     private var devMessage:String="";
-    private var uMessage:String="";
     
     init(){
     }

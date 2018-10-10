@@ -7,29 +7,36 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     var userInfo:UserInfo=UserInfo(id: "", uname: "", pass: "");
-    var userList=[UserInfo]();
+    var locationData:MyLocation=MyLocation();
     
     @IBOutlet weak var errorMessageLabel: UILabel!
-    
     @IBOutlet weak var UIpassword: UITextField!
     @IBOutlet weak var UIusername: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var loadingNotif: UILabel!
     
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.UIusername.text="ljbdelacruz";
-        self.UIpassword.text="soyamilk"
+        
+        self.locationData.LMInit(delegate: self, accuracy: kCLLocationAccuracyHundredMeters);
+        self.locationData.locationManager.requestWhenInUseAuthorization();
+        self.locationData.locationManager.startUpdatingLocation();
+
+        //this should work if connected to personal server
+        self.UIusername.text="ljbdelacruz123@gmail.com";
+        self.UIpassword.text=""
     }
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBAction func onLoginClick(_ sender: UIButton) {
+        self.ToggleOptions();
         self.loadingNotif.alpha=1;
         self.userInfo.Username=self.UIusername.text!;
         self.userInfo.Password=self.UIpassword.text!;
@@ -43,11 +50,25 @@ class ViewController: UIViewController {
                 self.performSegue(withIdentifier: "loginToDashboard", sender:sender);
             }
             self.loadingNotif.alpha=0;
+            self.ToggleOptions();
         })
     }
     func ToggleOptions(){
         self.UIpassword.isUserInteractionEnabled = !self.UIpassword.isEnabled;
         self.UIusername.isUserInteractionEnabled = !self.UIusername.isEnabled;
+    }
+    
+    //LocationManager methods
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        var location=locations[locations.count-1];
+        //as soon as the accuracy is ok stop updating in getting location to avoid battery drainage
+        //since this activity is battery intensive
+        if(location.horizontalAccuracy>0){
+            self.locationData.locationManager.stopUpdatingLocation();
+        }
+    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Make sure that your location is enabled or not in a airplane mode");
     }
     
     
