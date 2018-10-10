@@ -34,7 +34,7 @@ class UserInfo:QueryData{
     
     func Authenticate(completionHandler: @escaping (Any?, Bool?, Error?) -> ()){
 //        invoke authenticate function to api
-        self.PostAlamo(url: "UserInformation/UAuthenticate", param: ["email":self.Username, "password":self.Password], completionHandler: {
+        self.PostAlamo(url: "UserInformation/UTestAuth", param: ["email":self.Username, "pass":self.Password], completionHandler: {
             (response, error)->() in
             var jsonData=response! as! JSON;
             var isSuccess=self.CheckJSONSuccess(json: jsonData);

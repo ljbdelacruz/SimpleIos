@@ -39,17 +39,10 @@ class QueryData{
 //    }
     
     func FormatJSON(json:JSON, isSuccess:Bool)->Any{
-        if(isSuccess==true){
-            return json["data"];
-        }else{
-            return json["message"].stringValue;
-        }
+        return isSuccess==true ? json["data"] : json["message"].stringValue;
     }
     func CheckJSONSuccess(json:JSON)->Bool{
-        if(json["success"].boolValue == true){
-            return true;
-        }
-        return false;
+        return json["success"].boolValue == true ? true :false;
     }
     
     func PostData(myURL:String, paramData:String)->Any{
