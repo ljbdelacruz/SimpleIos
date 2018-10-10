@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class QueryData{
     private var devMessage:String="";
@@ -15,25 +16,40 @@ class QueryData{
     
     init(){
     }
-    func PostAlamo(url:String, param:[String:String]){
-        Alamofire.request(url, method:.post, parameters:param).responseJSON(completionHandler: { response in
+    func PostAlamo(url:String, param:[String:String], completionHandler: @escaping (Any?, Error?) -> ()){
+        Alamofire.request(baseURL+url, method:.post, parameters:param).responseJSON{response in
             if response.result.isSuccess{
-                
+                let data:JSON=JSON(response.result.value!);
+                completionHandler(data as? JSON, nil)
             }else{
-                self.devMessage="Error \(response.result.error)";
-                self.uMessage="Please make sure you have internet connection!";
+                self.devMessage="Error \(response.result.error!)";
+                completionHandler("Please make sure you have internet connection!" as? String, nil)
             }
-        });
+        };
     }
-    func GetAlamo(url:String, param:[String:String]){
-        Alamofire.request(url, method:.get, parameters:param).responseJSON(completionHandler: { response in
-            if response.result.isSuccess{
-                
-            }else{
-                self.devMessage="Error \(response.result.error)";
-                self.uMessage="Please make sure you have internet connection!";
-            }
-        });
+//    func GetAlamo(url:String, param:[String:String]){
+//        Alamofire.request(baseURL+url, method:.get, parameters:param).responseJSON(completionHandler: { response in
+//            if response.result.isSuccess{
+//                let data:JSON=JSON(response.result.value!);
+//            }else{
+//                self.devMessage="Error \(response.result.error)";
+//                self.uMessage="Please make sure you have internet connection!";
+//            }
+//        });
+//    }
+    
+    func FormatJSON(json:JSON, isSuccess:Bool)->Any{
+        if(isSuccess==true){
+            return json["data"];
+        }else{
+            return json["message"].stringValue;
+        }
+    }
+    func CheckJSONSuccess(json:JSON)->Bool{
+        if(json["success"].boolValue == true){
+            return true;
+        }
+        return false;
     }
     
     func PostData(myURL:String, paramData:String)->Any{

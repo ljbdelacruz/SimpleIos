@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SwiftyJSON
 
 class UserInfo:QueryData{
     var ID:String;
@@ -25,11 +25,22 @@ class UserInfo:QueryData{
         self.Username=uname;
         self.Password=pass;
     }
+    convenience init(json:JSON){
+        self.init();
+        self.ID=json["ID"].stringValue;
+        self.Username=json["EmailAddress"].stringValue;
+        self.Password=json["Password"].stringValue;
+    }
     
-    func Authenticate()->Bool{
-        //invoke authenticate function to api
-//        var data=self.PostData(myURL: baseURL+"Login/Authenticate", paramData: "username="+self.Username+"&password="+password);
-        return self.Username == "ljbdelacruz" && self.Password=="soyamilk" ? true:false;
+    func Authenticate(completionHandler: @escaping (Any?, Bool?, Error?) -> ()){
+//        invoke authenticate function to api
+        self.PostAlamo(url: "UserInformation/UAuthenticate", param: ["email":self.Username, "password":self.Password], completionHandler: {
+            (response, error)->() in
+            var jsonData=response! as! JSON;
+            var isSuccess=self.CheckJSONSuccess(json: jsonData);
+            var resp=self.FormatJSON(json: jsonData, isSuccess: isSuccess);
+            completionHandler(resp as? Any, isSuccess, nil)
+        });
     }
     
     

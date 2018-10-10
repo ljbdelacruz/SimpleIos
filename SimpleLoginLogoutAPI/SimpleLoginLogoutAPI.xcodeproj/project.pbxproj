@@ -18,6 +18,7 @@
 		6F1CBD3D216BC1CA008E2FEC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD3C216BC1CA008E2FEC /* DashboardViewController.swift */; };
 		6F1CBD3F216C6456008E2FEC /* QueryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD3E216C6456008E2FEC /* QueryData.swift */; };
 		6F1CBD42216C65E5008E2FEC /* globalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD41216C65E5008E2FEC /* globalData.swift */; };
+		6F1CBD44216D57F1008E2FEC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CBD43216D57F1008E2FEC /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		6F1CBD3C216BC1CA008E2FEC /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		6F1CBD3E216C6456008E2FEC /* QueryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryData.swift; sourceTree = "<group>"; };
 		6F1CBD41216C65E5008E2FEC /* globalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalData.swift; sourceTree = "<group>"; };
+		6F1CBD43216D57F1008E2FEC /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99A33BAB6C0239C595285DC /* Pods-SimpleLoginLogoutAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginLogoutAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1CBD44216D57F1008E2FEC /* SwiftyJSON.framework in Frameworks */,
 				562D7A95EEEDC32C4F13C1F5 /* Pods_SimpleLoginLogoutAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +56,7 @@
 		69BB578C5F833CDFA11CA3A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F1CBD43216D57F1008E2FEC /* SwiftyJSON.framework */,
 				44B9B04CA14B19977FC12373 /* Pods_SimpleLoginLogoutAPI.framework */,
 			);
 			name = Frameworks;
@@ -83,7 +87,6 @@
 				6F1CBD3B216BC1B4008E2FEC /* ViewControllers */,
 				6F1CBD36216B0F76008E2FEC /* models */,
 				6F1CBD2421671B2F008E2FEC /* AppDelegate.swift */,
-				6F1CBD2621671B2F008E2FEC /* ViewController.swift */,
 				6F1CBD2821671B2F008E2FEC /* Main.storyboard */,
 				6F1CBD2B21671B2F008E2FEC /* Assets.xcassets */,
 				6F1CBD2D21671B2F008E2FEC /* LaunchScreen.storyboard */,
@@ -105,6 +108,7 @@
 		6F1CBD3B216BC1B4008E2FEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F1CBD2621671B2F008E2FEC /* ViewController.swift */,
 				6F1CBD3C216BC1CA008E2FEC /* DashboardViewController.swift */,
 			);
 			path = ViewControllers;
@@ -397,7 +401,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				INFOPLIST_FILE = SimpleLoginLogoutAPI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laineljohn.SimpleLoginLogoutAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -413,7 +420,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				INFOPLIST_FILE = SimpleLoginLogoutAPI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laineljohn.SimpleLoginLogoutAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

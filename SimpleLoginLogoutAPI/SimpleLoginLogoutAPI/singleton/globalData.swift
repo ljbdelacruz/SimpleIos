@@ -9,5 +9,6 @@
 import Foundation
 
 
-var baseURL:String="192.168.0.102/";
+var baseURL:String="http://geoperson01-001-site1.dtempurl.com/";
+var userLoginInfo:UserInfo=UserInfo();
 

@@ -31,14 +31,24 @@ class ViewController: UIViewController {
     @IBAction func onLoginClick(_ sender: UIButton) {
         self.userInfo.Username=self.UIusername.text!;
         self.userInfo.Password=self.UIpassword.text!;
+        self.userInfo.Authenticate(completionHandler: {
+            (response, isSuccess,error) in
+            if(isSuccess!==false){
+                let message=response! as! String
+                self.errorMessageLabel.text=message;
+                self.errorMessageLabel.alpha=1;
+            }else{
+                
+            }
+        })
         
-        if(self.userInfo.Authenticate()){
-            //allow proceed to dashboard page
-            performSegue(withIdentifier: "loginToDashboard", sender: sender);
-        }else{
-            self.errorMessageLabel.text="Please use valid username and password to login";
-            self.errorMessageLabel.alpha=1;
-        }
+//        if(self.userInfo.Authenticate()){
+//            //allow proceed to dashboard page
+//            performSegue(withIdentifier: "loginToDashboard", sender: sender);
+//        }else{
+//            self.errorMessageLabel.text="Please use valid username and password to login";
+//            self.errorMessageLabel.alpha=1;
+//        }
     }
     func ToggleOptions(){
         self.UIpassword.isUserInteractionEnabled = !self.UIpassword.isEnabled;
