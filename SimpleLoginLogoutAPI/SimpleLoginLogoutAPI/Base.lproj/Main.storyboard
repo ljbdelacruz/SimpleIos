@@ -157,7 +157,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="circleProgressBar" destination="DqS-FV-OYU" id="95v-bv-2XF"/>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="logoutSegue" animates="NO" id="lbt-bq-nrg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9z-fP-vaq" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,6 +15,7 @@ class MyLocation:QueryData{
     public var latitude:Double;
     public let locationManager=CLLocationManager();
     
+    
     override init(){
         self.ID="";
         self.longitude=0;
@@ -38,6 +39,8 @@ class MyLocation:QueryData{
     func MLinit(coordinate:CLLocationCoordinate2D){
         self.longitude=coordinate.longitude;
         self.latitude=coordinate.latitude;
+        print(self.latitude," ",self.longitude);
     }
+    
     
 }

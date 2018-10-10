@@ -35,7 +35,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
     
     @IBAction func onLogoutClick(_ sender: Any) {
-        performSegue(withIdentifier: "logoutSegue", sender: sender);
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*

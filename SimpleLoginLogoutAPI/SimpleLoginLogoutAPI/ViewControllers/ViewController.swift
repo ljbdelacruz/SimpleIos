@@ -12,6 +12,7 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
     var userInfo:UserInfo=UserInfo(id: "", uname: "", pass: "");
     var locationData:MyLocation=MyLocation();
+    var myFriendsLoc=[MyLocation]();
     
     @IBOutlet weak var errorMessageLabel: UILabel!
     @IBOutlet weak var UIpassword: UITextField!
@@ -65,6 +66,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //since this activity is battery intensive
         if(location.horizontalAccuracy>0){
             self.locationData.locationManager.stopUpdatingLocation();
+            self.locationData.MLinit(coordinate: location.coordinate);
         }
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
