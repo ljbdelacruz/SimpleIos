@@ -75,6 +75,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, Authenticatio
         if(location.horizontalAccuracy>0){
             self.locationData.locationManager.stopUpdatingLocation();
             self.locationData.MLinit(coordinate: location.coordinate);
+            //weather data init
+            self.weatherData=WeatherViewModel(cname: "", cond: "", degree: "0", location: self.locationData);
+            self.FetchWeatherData();
         }
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -118,13 +121,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate, Authenticatio
         self.loadingNotif.alpha=1;
         self.fbVM?.RequestPermission(vc: self, completionHandler: {(message, isSuccess) in
             if isSuccess!==true{
-                print("My Result");
-                print(self.fbVM!.Email!);
                 self.fbButton.setTitle("Welcome "+self.fbVM!.Name!, for: .normal);
                 self.userInfo.Username=self.fbVM!.Email!;
                 self.userInfo.Name=self.fbVM!.Name!;
                 self.loadingNotif.alpha=0;
                 self.performSegue(withIdentifier: "loginToCodeEnter", sender:sender);
+            }
+        })
+    }
+    //weather data
+    @IBOutlet weak var labelCity: UILabel!
+    @IBOutlet weak var labelWeatherCondition: UILabel!
+    @IBOutlet weak var labelDegree: UILabel!
+    var weatherData:WeatherViewModel?;
+    func FetchWeatherData(){
+        self.weatherData?.RequestWeatherDataByGeolocation(completionHandler: {(result, isSuccess) in
+            if isSuccess==true{
+                self.labelCity.text=self.weatherData?.cityName;
+                self.labelCity.alpha=1;
+                self.labelWeatherCondition.text=self.weatherData?.condition;
+                self.labelWeatherCondition.alpha=1;
+                self.labelDegree.text=self.weatherData!.degrees!+" Celcius"
+                self.labelDegree.alpha=1;
+            }else{
+                //failed
             }
         })
     }

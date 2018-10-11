@@ -23,6 +23,7 @@
 		6F1CBD49216EC87D008E2FEC /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD48216EC87D008E2FEC /* AuthenticationDelegate.swift */; };
 		6F1CBD4B216ECA05008E2FEC /* CodeEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4A216ECA05008E2FEC /* CodeEnterViewController.swift */; };
 		6F1CBD4D216F06D5008E2FEC /* FBvm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4C216F06D5008E2FEC /* FBvm.swift */; };
+		6F1CBD4F216F58E7008E2FEC /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4E216F58E7008E2FEC /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		6F1CBD48216EC87D008E2FEC /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDelegate.swift; sourceTree = "<group>"; };
 		6F1CBD4A216ECA05008E2FEC /* CodeEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEnterViewController.swift; sourceTree = "<group>"; };
 		6F1CBD4C216F06D5008E2FEC /* FBvm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBvm.swift; sourceTree = "<group>"; };
+		6F1CBD4E216F58E7008E2FEC /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		B99A33BAB6C0239C595285DC /* Pods-SimpleLoginLogoutAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginLogoutAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				6F1CBD3E216C6456008E2FEC /* QueryData.swift */,
 				6F1CBD45216E5239008E2FEC /* MyLocation.swift */,
 				6F1CBD4C216F06D5008E2FEC /* FBvm.swift */,
+				6F1CBD4E216F58E7008E2FEC /* WeatherViewModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1CBD3A216BBAA3008E2FEC /* UserInfoList.swift in Sources */,
+				6F1CBD4F216F58E7008E2FEC /* WeatherViewModel.swift in Sources */,
 				6F1CBD42216C65E5008E2FEC /* globalData.swift in Sources */,
 				6F1CBD4B216ECA05008E2FEC /* CodeEnterViewController.swift in Sources */,
 				6F1CBD46216E5239008E2FEC /* MyLocation.swift in Sources */,

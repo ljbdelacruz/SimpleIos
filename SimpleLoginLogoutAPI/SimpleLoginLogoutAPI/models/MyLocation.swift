@@ -39,6 +39,7 @@ class MyLocation:QueryData{
     func MLinit(coordinate:CLLocationCoordinate2D){
         self.longitude=coordinate.longitude;
         self.latitude=coordinate.latitude;
+        print("Coordinates");
         print(self.latitude," ",self.longitude);
     }
     

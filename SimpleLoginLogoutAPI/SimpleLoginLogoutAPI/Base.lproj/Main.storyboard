@@ -92,6 +92,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weather Information" lineBreakMode="wordWrap" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MT5-Qw-Ox4">
+                                <rect key="frame" x="16" y="98" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City" lineBreakMode="clip" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ny6-iO-OpL">
+                                <rect key="frame" x="16" y="69" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Degree" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DiP-wf-TAM">
+                                <rect key="frame" x="16" y="127" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -103,6 +124,9 @@
                         <outlet property="errorMessageLabel" destination="Ukz-sP-anh" id="Icw-Ag-gmy"/>
                         <outlet property="fbButton" destination="K0Y-VV-KRe" id="BVQ-0d-UW3"/>
                         <outlet property="fbLoginLabel" destination="1xk-8Z-ya5" id="Vt3-ab-dEm"/>
+                        <outlet property="labelCity" destination="Ny6-iO-OpL" id="Ovc-rJ-gjD"/>
+                        <outlet property="labelDegree" destination="DiP-wf-TAM" id="vse-mb-Sb0"/>
+                        <outlet property="labelWeatherCondition" destination="MT5-Qw-Ox4" id="9Wr-fm-vvL"/>
                         <outlet property="loadingNotif" destination="WSo-7V-ejH" id="4d6-MK-rcx"/>
                         <outlet property="loginBtn" destination="PJ0-PS-2cI" id="kCP-LD-7Ft"/>
                         <segue destination="Ihj-C3-k5Y" kind="show" identifier="loginToCodeEnter" id="Afd-dI-dDZ"/>

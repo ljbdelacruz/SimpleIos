@@ -15,8 +15,8 @@ class QueryData{
     
     init(){
     }
-    func PostAlamo(url:String, param:[String:String], completionHandler: @escaping (Any?, Bool?, Error?) -> ()){
-        Alamofire.request(baseURL+url, method:.post, parameters:param).responseJSON{response in
+    func PostAlamo(url:String, param:[String:Any], completionHandler: @escaping (Any?, Bool?, Error?) -> ()){
+        Alamofire.request(url, method:.post, parameters:param).responseJSON{response in
             if response.result.isSuccess{
                 let data:JSON=JSON(response.result.value!);
                 completionHandler(data as? JSON, true, nil)
@@ -26,16 +26,17 @@ class QueryData{
             }
         };
     }
-//    func GetAlamo(url:String, param:[String:String]){
-//        Alamofire.request(baseURL+url, method:.get, parameters:param).responseJSON(completionHandler: { response in
-//            if response.result.isSuccess{
-//                let data:JSON=JSON(response.result.value!);
-//            }else{
-//                self.devMessage="Error \(response.result.error)";
-//                self.uMessage="Please make sure you have internet connection!";
-//            }
-//        });
-//    }
+    func GetAlamo(url:String, param:[String:Any], completionHandler: @escaping (Any?, Bool?, Error?) -> ()){
+        Alamofire.request(url, method:.get, parameters:param).responseJSON{response in
+            if response.result.isSuccess{
+                let data:JSON=JSON(response.result.value!);
+                completionHandler(data as? JSON, true, nil)
+            }else{
+                self.devMessage="Error \(response.result.error!)";
+                completionHandler("Not Connected to internet" as? String, false, nil)
+            }
+        };
+    }
     
     func FormatJSON(json:JSON, isSuccess:Bool)->Any{
         return isSuccess==true ? json["data"] : json["message"].stringValue;
