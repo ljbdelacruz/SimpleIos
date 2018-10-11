@@ -1,7 +1,19 @@
 PODS:
   - Alamofire (4.7.3)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
   - CardIO (5.4.1)
   - CircleProgressBar (0.32)
+  - FBSDKCoreKit (4.37.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.37.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.37.0):
+    - FBSDKCoreKit (~> 4.37.0)
   - PayPal-iOS-SDK (2.18.1):
     - PayPal-iOS-SDK/CardIO (= 2.18.1)
     - PayPal-iOS-SDK/Core (= 2.18.1)
@@ -13,24 +25,35 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - CircleProgressBar
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
   - PayPal-iOS-SDK
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Bolts
     - CardIO
     - CircleProgressBar
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
     - PayPal-iOS-SDK
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+  FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
+  FBSDKLoginKit: 2f7249686d1e30ce8a5ef5400eedf50b3e3df332
+  FBSDKShareKit: 52e0083222c38e930eb6878007478326599195c3
   PayPal-iOS-SDK: 10654cd111e911a9807bddb96fae81aacb8e9915
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: ac19fa1460558bdf63ab0ab59dffb80c57f0c588
+PODFILE CHECKSUM: 7ce649f1147881f8c808b68f8958e1fb75475f06
 
 COCOAPODS: 1.5.0

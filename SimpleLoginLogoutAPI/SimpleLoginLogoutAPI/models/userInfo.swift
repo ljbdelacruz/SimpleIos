@@ -13,10 +13,12 @@ class UserInfo:QueryData{
     var ID:String;
     var Username:String;
     var Password:String;
+    var Name:String;
     override init(){
         self.ID="";
         self.Username="";
         self.Password="";
+        self.Name="";
         super.init();
     }
     convenience init(id:String, uname:String, pass:String){

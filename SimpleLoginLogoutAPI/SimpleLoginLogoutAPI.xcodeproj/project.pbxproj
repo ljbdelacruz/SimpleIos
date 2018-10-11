@@ -22,6 +22,7 @@
 		6F1CBD46216E5239008E2FEC /* MyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD45216E5239008E2FEC /* MyLocation.swift */; };
 		6F1CBD49216EC87D008E2FEC /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD48216EC87D008E2FEC /* AuthenticationDelegate.swift */; };
 		6F1CBD4B216ECA05008E2FEC /* CodeEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4A216ECA05008E2FEC /* CodeEnterViewController.swift */; };
+		6F1CBD4D216F06D5008E2FEC /* FBvm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4C216F06D5008E2FEC /* FBvm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		6F1CBD45216E5239008E2FEC /* MyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocation.swift; sourceTree = "<group>"; };
 		6F1CBD48216EC87D008E2FEC /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDelegate.swift; sourceTree = "<group>"; };
 		6F1CBD4A216ECA05008E2FEC /* CodeEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEnterViewController.swift; sourceTree = "<group>"; };
+		6F1CBD4C216F06D5008E2FEC /* FBvm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBvm.swift; sourceTree = "<group>"; };
 		B99A33BAB6C0239C595285DC /* Pods-SimpleLoginLogoutAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginLogoutAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				6F1CBD39216BBAA3008E2FEC /* UserInfoList.swift */,
 				6F1CBD3E216C6456008E2FEC /* QueryData.swift */,
 				6F1CBD45216E5239008E2FEC /* MyLocation.swift */,
+				6F1CBD4C216F06D5008E2FEC /* FBvm.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -243,13 +246,21 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/CircleProgressBar/CircleProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +280,7 @@
 				6F1CBD4B216ECA05008E2FEC /* CodeEnterViewController.swift in Sources */,
 				6F1CBD46216E5239008E2FEC /* MyLocation.swift in Sources */,
 				6F1CBD38216B0F87008E2FEC /* userInfo.swift in Sources */,
+				6F1CBD4D216F06D5008E2FEC /* FBvm.swift in Sources */,
 				6F1CBD3F216C6456008E2FEC /* QueryData.swift in Sources */,
 				6F1CBD49216EC87D008E2FEC /* AuthenticationDelegate.swift in Sources */,
 				6F1CBD3D216BC1CA008E2FEC /* DashboardViewController.swift in Sources */,

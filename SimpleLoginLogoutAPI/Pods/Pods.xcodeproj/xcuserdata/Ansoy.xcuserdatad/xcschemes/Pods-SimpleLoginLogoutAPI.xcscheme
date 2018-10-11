@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76DD574315A1FD0655D02EF2E54E80A8"
+               BlueprintIdentifier = "60482435292D080762F1E59C6CCB86D6"
                BuildableName = "Pods_SimpleLoginLogoutAPI.framework"
                BlueprintName = "Pods-SimpleLoginLogoutAPI"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76DD574315A1FD0655D02EF2E54E80A8"
+            BlueprintIdentifier = "60482435292D080762F1E59C6CCB86D6"
             BuildableName = "Pods_SimpleLoginLogoutAPI.framework"
             BlueprintName = "Pods-SimpleLoginLogoutAPI"
             ReferencedContainer = "container:Pods.xcodeproj">
