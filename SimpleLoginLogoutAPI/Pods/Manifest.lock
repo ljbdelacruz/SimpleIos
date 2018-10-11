@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.3)
   - CardIO (5.4.1)
   - CircleProgressBar (0.32)
   - PayPal-iOS-SDK (2.18.1):
@@ -8,7 +8,7 @@ PODS:
   - PayPal-iOS-SDK/CardIO (2.18.1):
     - CardIO (~> 5.4.1)
   - PayPal-iOS-SDK/Core (2.18.1)
-  - SwiftyJSON (4.0.0)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -25,11 +25,11 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
   PayPal-iOS-SDK: 10654cd111e911a9807bddb96fae81aacb8e9915
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
 PODFILE CHECKSUM: f7e660f910908ed329a416cab404b9ccea21a08c
 

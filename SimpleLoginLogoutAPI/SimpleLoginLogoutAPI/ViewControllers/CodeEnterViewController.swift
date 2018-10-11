@@ -10,6 +10,7 @@ import UIKit
 
 class CodeEnterViewController: UIViewController {
     var code:String?;
+    var userLoginInfo:UserInfo?;
     var AuthDelegate:AuthenticationDelegate?;
     @IBOutlet weak var UICodeTF: UITextField!
     
@@ -32,6 +33,12 @@ class CodeEnterViewController: UIViewController {
 //                if(self.code==self.UICodeTF.text!){
 //                }
 //            });
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier=="toDashboard"{
+            let destVC=segue.destination as! DashboardViewController;
+            destVC.userLoginInfo=self.userLoginInfo;
         }
     }
 }

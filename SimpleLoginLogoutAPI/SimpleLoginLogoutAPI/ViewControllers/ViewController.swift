@@ -78,6 +78,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, Authenticatio
             let destVC=segue.destination as! CodeEnterViewController;
             destVC.AuthDelegate=self;
             destVC.code=self.code;
+            destVC.userLoginInfo=self.userInfo;
         }
     }
     //delegate Auth

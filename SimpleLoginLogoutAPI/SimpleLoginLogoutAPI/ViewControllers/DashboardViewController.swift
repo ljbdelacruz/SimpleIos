@@ -12,9 +12,12 @@ import CircleProgressBar
 class DashboardViewController: UIViewController {
     var userLoginInfo:UserInfo?;
     
+    @IBOutlet weak var introLabel: UILabel!
+    
     var progressPercent:CGFloat=0.1;
     override func viewDidLoad(){
         super.viewDidLoad()
+        self.introLabel.text="Welcome "+self.userLoginInfo!.Username;
         self.navigationController?.isNavigationBarHidden=true;
         // Do any additional setup after loading the view.
         self.circleProgressBar.setProgress(self.progressPercent, animated: true)
