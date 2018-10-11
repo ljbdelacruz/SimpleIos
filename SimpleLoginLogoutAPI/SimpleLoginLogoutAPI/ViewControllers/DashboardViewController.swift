@@ -10,9 +10,12 @@ import UIKit
 import CircleProgressBar
 
 class DashboardViewController: UIViewController {
+    var userLoginInfo:UserInfo?;
+    
     var progressPercent:CGFloat=0.1;
     override func viewDidLoad(){
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden=true;
         // Do any additional setup after loading the view.
         self.circleProgressBar.setProgress(self.progressPercent, animated: true)
     }
@@ -35,17 +38,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
     
     @IBAction func onLogoutClick(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

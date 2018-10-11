@@ -9,7 +9,8 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, AuthenticationDelegate {
+    
     var userInfo:UserInfo=UserInfo(id: "", uname: "", pass: "");
     var locationData:MyLocation=MyLocation();
     var myFriendsLoc=[MyLocation]();
@@ -23,11 +24,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad(){
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         self.locationData.LMInit(delegate: self, accuracy: kCLLocationAccuracyHundredMeters);
         self.locationData.locationManager.requestWhenInUseAuthorization();
         self.locationData.locationManager.startUpdatingLocation();
-
         //this should work if connected to personal server
         self.UIusername.text="ljbdelacruz123@gmail.com";
         self.UIpassword.text=""
@@ -48,12 +47,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 self.errorMessageLabel.text=message;
                 self.errorMessageLabel.alpha=1;
             }else{
-                self.performSegue(withIdentifier: "loginToDashboard", sender:sender);
+                self.performSegue(withIdentifier: "loginToCodeEnter", sender:sender);
             }
             self.loadingNotif.alpha=0;
             self.ToggleOptions();
         })
     }
+    
     func ToggleOptions(){
         self.UIpassword.isUserInteractionEnabled = !self.UIpassword.isEnabled;
         self.UIusername.isUserInteractionEnabled = !self.UIusername.isEnabled;
@@ -71,6 +71,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Make sure that your location is enabled or not in a airplane mode");
+    }
+    let code="000"
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loginToCodeEnter"{
+            let destVC=segue.destination as! CodeEnterViewController;
+            destVC.AuthDelegate=self;
+            destVC.code=self.code;
+        }
+    }
+    //delegate Auth
+    //code sent into your phone
+
+    func errorMessage(message: String?) {
+        self.errorMessageLabel.text=message!;
+        self.errorMessageLabel.alpha=1;
     }
     
     
