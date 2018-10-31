@@ -11,7 +11,7 @@ import CoreLocation
 import FBSDKLoginKit;
 import SwiftyJSON;
 
-class ViewController: UIViewController, CLLocationManagerDelegate, AuthenticationDelegate, FBSDKLoginButtonDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDelegate, AuthenticationDelegate, FBSDKLoginButtonDelegate {
     
     var userInfo:UserInfo=UserInfo();
     var locationData:MyLocation=MyLocation();
@@ -34,12 +34,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, Authenticatio
         self.UIpassword.text=""
         //initialize fbVM
         self.fbVM=FBvm();
-//        if(FBSDKAccessToken.currentAccessTokenIsActive() != nil){
-//            self.GetFBUserInfo();
-//        }else{
-//
-//        }
+        self.UIusername.delegate=self;
+        self.UIpassword.delegate=self;
+//        self.UIusername;
     }
+    
+    
+    
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

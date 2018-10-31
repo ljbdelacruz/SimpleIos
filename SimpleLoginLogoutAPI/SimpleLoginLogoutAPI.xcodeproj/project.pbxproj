@@ -24,6 +24,7 @@
 		6F1CBD4B216ECA05008E2FEC /* CodeEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4A216ECA05008E2FEC /* CodeEnterViewController.swift */; };
 		6F1CBD4D216F06D5008E2FEC /* FBvm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4C216F06D5008E2FEC /* FBvm.swift */; };
 		6F1CBD4F216F58E7008E2FEC /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1CBD4E216F58E7008E2FEC /* WeatherViewModel.swift */; };
+		6F5D5B3121702C2B004A50A8 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D5B3021702C2B004A50A8 /* ShakingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		6F1CBD4A216ECA05008E2FEC /* CodeEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEnterViewController.swift; sourceTree = "<group>"; };
 		6F1CBD4C216F06D5008E2FEC /* FBvm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBvm.swift; sourceTree = "<group>"; };
 		6F1CBD4E216F58E7008E2FEC /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		6F5D5B3021702C2B004A50A8 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
 		B99A33BAB6C0239C595285DC /* Pods-SimpleLoginLogoutAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginLogoutAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleLoginLogoutAPI/Pods-SimpleLoginLogoutAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,8 +95,9 @@
 		6F1CBD2321671B2F008E2FEC /* SimpleLoginLogoutAPI */ = {
 			isa = PBXGroup;
 			children = (
+				6F5D5B3221703287004A50A8 /* Animation */,
 				6F1CBD47216EC84E008E2FEC /* protocols */,
-				6F1CBD40216C65C8008E2FEC /* singleton */,
+				6F1CBD40216C65C8008E2FEC /* globalData */,
 				6F1CBD3B216BC1B4008E2FEC /* ViewControllers */,
 				6F1CBD36216B0F76008E2FEC /* models */,
 				6F1CBD2421671B2F008E2FEC /* AppDelegate.swift */,
@@ -129,12 +132,12 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		6F1CBD40216C65C8008E2FEC /* singleton */ = {
+		6F1CBD40216C65C8008E2FEC /* globalData */ = {
 			isa = PBXGroup;
 			children = (
 				6F1CBD41216C65E5008E2FEC /* globalData.swift */,
 			);
-			path = singleton;
+			path = globalData;
 			sourceTree = "<group>";
 		};
 		6F1CBD47216EC84E008E2FEC /* protocols */ = {
@@ -143,6 +146,14 @@
 				6F1CBD48216EC87D008E2FEC /* AuthenticationDelegate.swift */,
 			);
 			path = protocols;
+			sourceTree = "<group>";
+		};
+		6F5D5B3221703287004A50A8 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D5B3021702C2B004A50A8 /* ShakingTextField.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		E9848AAE4B50F22E7E1D620E /* Pods */ = {
@@ -287,6 +298,7 @@
 				6F1CBD4D216F06D5008E2FEC /* FBvm.swift in Sources */,
 				6F1CBD3F216C6456008E2FEC /* QueryData.swift in Sources */,
 				6F1CBD49216EC87D008E2FEC /* AuthenticationDelegate.swift in Sources */,
+				6F5D5B3121702C2B004A50A8 /* ShakingTextField.swift in Sources */,
 				6F1CBD3D216BC1CA008E2FEC /* DashboardViewController.swift in Sources */,
 				6F1CBD2721671B2F008E2FEC /* ViewController.swift in Sources */,
 				6F1CBD2521671B2F008E2FEC /* AppDelegate.swift in Sources */,

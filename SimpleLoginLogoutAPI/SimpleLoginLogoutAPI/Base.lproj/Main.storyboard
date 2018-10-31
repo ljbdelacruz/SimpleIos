@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bn8-0O-43R">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bn8-0O-43R" customClass="ShakingTextField" customModule="SimpleLoginLogoutAPI" customModuleProvider="target" propertyAccessControl="all">
                                 <rect key="frame" x="16" y="282" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <nil key="textColor"/>
@@ -120,7 +120,7 @@
                     <navigationItem key="navigationItem" id="nh2-oH-eyj"/>
                     <connections>
                         <outlet property="UIpassword" destination="5tO-Hr-2iC" id="lqh-ZN-UhE"/>
-                        <outlet property="UIusername" destination="bn8-0O-43R" id="GAw-xT-J1K"/>
+                        <outlet property="UIusername" destination="bn8-0O-43R" id="7V5-t1-iAs"/>
                         <outlet property="errorMessageLabel" destination="Ukz-sP-anh" id="Icw-Ag-gmy"/>
                         <outlet property="fbButton" destination="K0Y-VV-KRe" id="BVQ-0d-UW3"/>
                         <outlet property="fbLoginLabel" destination="1xk-8Z-ya5" id="Vt3-ab-dEm"/>
